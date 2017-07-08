@@ -57,7 +57,7 @@ for corsList in stnFile:
 	data2 = s2.recv(2048).decode("ascii")
 	#print(data2)
 
-  # CORS station status is ONLINE
+  	# CORS station status is ONLINE
 	if data2.strip() == "ICY 200 OK":
 		print("Station " + values[0] + " is Online")
 		countS1 = countS1 + 1
